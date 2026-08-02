@@ -82,3 +82,11 @@ pip install -r requirements.txt
 python accear_cgan_kaggle.py --epochs 200 --batch-size 16 --checkpoint-dir ./checkpoints
 ```
 If the `StealthyIMU` dataset is not present locally, the code will automatically default to generating synthetic Speech and IMU signal pairs to verify the end-to-end correctness of your model execution.
+
+---
+
+## 💾 Model Checkpoints
+
+* **Tracked Best Model:** `checkpoints/accear_cgan_best_model.pt` is tracked in Git. It represents the weights from **Epoch 194** of the 200-epoch training run, achieving the lowest L1 Spectrogram Loss of **0.0403**.
+* **Ignored Local Archives:** The raw training checkpoint zip archives (`accear_cgan_epoch_044.zip` and `AccEar 200 epoch(google colab trained).zip`) are ignored via `.gitignore` to keep the repository lightweight, but are preserved locally in the workspace directory.
+
