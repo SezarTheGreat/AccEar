@@ -1,0 +1,6 @@
+StealthyIMU_dataset/
+__pycache__/
+*.pyc
+.gemini/
+*.zip
+checkpoints/accear_cgan_epoch_*.pt
